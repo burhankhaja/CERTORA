@@ -1,0 +1,1 @@
+# https://docs.certora.com/en/latest/docs/confluence/anatomy/ghosts.html

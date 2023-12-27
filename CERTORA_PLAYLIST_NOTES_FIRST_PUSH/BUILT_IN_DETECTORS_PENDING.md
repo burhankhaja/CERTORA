@@ -1,0 +1,5 @@
+- read only reentrancy detectors
+- overflow detectors
+- check their rule spec to parrot them
+- other detectors
+- check doc

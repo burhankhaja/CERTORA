@@ -14,6 +14,7 @@
 
 ## Method Unreachability detection [ALPHA]
 **`Run this rule to check if any methods in contract are unreachable from all the possible variable combinations`**
+- [click-me-alpha](https://docs.certora.com/en/latest/docs/cvl/builtin.html#how-sanity-is-checked)
 ```c
 rule MethodVacuityCheck(method f) {
     env e;

@@ -4,7 +4,7 @@
 
 ## ALPHA_TO_BE_EXPLORED
 - shadow audit aave all versions using certora
-- After each version testing compeletion, read certora specs to get pro level spec vision
+- After each version testing compeletion, read **certora official specs** to get pro level spec vision
 - **`REMEMBER AAVA IS CERTORA'S GIRLFRIEND, SO THEY MUST HAVE USED THEIR FULL_POWERS 😄`**
 
 ## Un_Explored

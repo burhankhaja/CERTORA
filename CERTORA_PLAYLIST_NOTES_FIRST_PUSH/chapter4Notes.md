@@ -182,6 +182,8 @@ methods {
 
 ## [DISPATCHER_DANGERS](https://docs.certora.com/en/latest/docs/user-guide/multicontract/index.html#the-dangers-of-dispatcher)
 
+## BEST WAY TO PROTECT AGAINST IS TO USE SYMBOLIC TYPE IF-ELSE ON ALL NON-VIEW FUNCTIONS, READ THE ABOVE DOC TO GET COMPELETE PICTURE
+
 
 
 ## NONDET

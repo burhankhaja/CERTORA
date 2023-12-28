@@ -180,6 +180,8 @@ methods {
 }
 ```
 
+## [DISPATCHER_DANGERS](https://docs.certora.com/en/latest/docs/user-guide/multicontract/index.html#the-dangers-of-dispatcher)
+
 
 
 ## NONDET

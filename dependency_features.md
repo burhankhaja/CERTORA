@@ -1,0 +1,11 @@
+- `using` keyword
+   - ```using Pool as underlying```
+   - now you can access Pool.anyVariable in spec
+- `--rule` to specify specific rule to run
+  - cmd:```--rule OnlyBobsBalanceChanges```
+  - so no matter how many rules spec has it will only run the above rule
+- link using this flag to link a contract with an asset in main contract like
+    - cmd:```--link erc20=dummyErc```
+    - Now suppose main contract has `IERC20` variable, `erc20`
+    - you create `dummyErc` and link it to the `erc20` variable in main contract
+    - remember you will need this `dummyErc.sol` to add to scene while executing commands

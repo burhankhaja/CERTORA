@@ -3,9 +3,11 @@
 - I compile notes, and tricks about certora here.
 
 ## ALPHA_TO_BE_EXPLORED
-- shadow audit aave all versions using certora
-- After each version testing compeletion, read **certora official specs** to get pro level spec vision
-- **`REMEMBER AAVA IS CERTORA'S GIRLFRIEND, SO THEY MUST HAVE USED THEIR FULL_POWERS 😄`**
+- **`Do certora official [contests](- https://www.certora.com/leaderboard#check-how-to-do-contests-here) to strengthn spec writing game with monetary greed`**
+- **shadow audit aave all versions using certora and read official certora specs**
+  - After each version testing compeletion, read **certora official specs** to get pro level spec vision
+  - **`REMEMBER AAVA IS CERTORA'S GIRLFRIEND, SO THEY MUST HAVE USED THEIR FULL_POWERS 😄`**
+
 
 ## Un_Explored
 - ghosts and hooks ? [;](https://docs.certora.com/en/latest/docs/cvl/ghosts.html)

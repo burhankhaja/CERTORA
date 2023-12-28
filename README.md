@@ -31,6 +31,6 @@
 - [EthCC](https://github.com/Certora/Tutorials/tree/michael/ethcc/EthCC/) excersises in certora github
 - [AAVE](https://www.youtube.com/watch?v=c8ZwKAvaiR0&list=PLKtu7wuOMP9WOLJNPafbrd0lehfc7yxso) certora [reports](https://github.com/Certora/aave-token-v3)
 - **`below_not_so_important`**
-- Do [Certora/examples](https://github.com/Certora/Examples)
-- [tutorial-code](https://github.com/Certora/tutorials-code/tree/master)
-- [Certora/tutorials](https://github.com/Certora/Tutorials/)
+  - Do [Certora/examples](https://github.com/Certora/Examples)
+  - [tutorial-code](https://github.com/Certora/tutorials-code/tree/master)
+  - [Certora/tutorials](https://github.com/Certora/Tutorials/)

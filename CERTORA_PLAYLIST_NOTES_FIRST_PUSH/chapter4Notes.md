@@ -1,6 +1,6 @@
 ## TABLE OF CONTENT
 - parametric rules
-- method {} block
+- methods {} block
 - implication and correlation
 - @withRevert and lastReverted
 - NONDET
@@ -29,16 +29,22 @@
 
 
 
-## METHOD BLOCK
+## METHODS BLOCK
 
-- `method {} block` <br>
-  it is best to declare view functions as envFree to save computation <br>
-  like balanceOf() function, here is how you do it
+- `methods {} block` <br>
+- used to manupilate behaviour of certain functions in contract
+- it is best to declare view functions as `envFree` to save computation
+- it is best to make external calls resolve to harness user-contract implementation using `dispathcer`
+- [`NONDET`](https://docs.certora.com/en/latest/docs/confluence/advanced/methods.html) : it says it returns havoced values, but what does that mean
+
+  
   ```c
     methods {
-      balanceOf(address)    returns (uint256) envfree
-      allowance(address,address) returns(uint256) envfree
-      // if it causes problems may be you have to also declare other env methods but without envfree at the end
+  // if it causes problems may be you have to also declare other env methods but without envfree at the end
+      function balanceOf(address) external   returns (uint256) envfree;
+       function _.executeOperation(uint256,uint256,address) external => DISPATCHER(true);
+       function getOraclePrice() external returns(uint256) => NONDET;
+      
     }
 
     //Now you can easily call them in your rule without passing e variable
@@ -141,7 +147,7 @@
 - More about method block `NONDET` && `DISPATCHER(true)`
 - `NONDET` is used when we wanna get random number each time
   ```c
-  method {
+  methods {
     //consider this example from kashipair that requires oracle to compute prices
     get(address token1, address token2) returns(uint256) => NONDET
   }
@@ -160,6 +166,31 @@
   }
   ```
 - `not sure about dispatcher still lookup to docs`
+
+## DISPATCHER
+- Use When A contract is calling user controlled contract
+- So we add custom user contract implementation to the scene
+- And assign DISPATCHER(true) to the function that interacts with users
+```c
+methods {
+   function flashLoan(address,amount) external returns(bool) => DISPATCHER(true);
+}
+```
+
+
+
+## NONDET
+
+```c
+// https://www.phind.com/search?cache=mjbrhvkq44gx5j0crdpu6yh2
+/**
+In Certora, NONDET is used to represent an overapproximation of a method's behavior. It considers every possible value that the original implementation could return 2.
+
+When you use NONDET, you are telling the Certora Prover to consider all possible outputs of the method, even those that might not occur during actual execution. This can be useful when the implementation of a method is complex or not available, allowing you to verify properties of the method without having to analyze its entire implementation 2.
+
+However, keep in mind that proofs on overapproximated programs are sound, but there may be spurious counterexamples caused by behavior that the original code did not exhibit. Therefore, NONDET should be used with caution, as it can potentially lead to false positives
+*/
+```
 
 
 

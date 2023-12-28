@@ -2,7 +2,12 @@
 - This repository is all about the certora.
 - I compile notes, and tricks about certora here.
 
-## Explore
+## ALPHA_TO_BE_EXPLORED
+- shadow audit aave all versions using certora
+- After each version testing compeletion, read certora specs to get pro level spec vision
+- **`REMEMBER AAVA IS CERTORA'S GIRLFRIEND, SO THEY MUST HAVE USED THEIR FULL_POWERS 😄`**
+
+## Un_Explored
 - ghosts and hooks ? [;](https://docs.certora.com/en/latest/docs/cvl/ghosts.html)
 - using `config files`, although not important but just for kick
 - Built-in certora detectors

@@ -26,6 +26,9 @@
 
 <br>
 <input type="checkbox"> Can <b>DISPATCHER(true)</b> assist me while i am working with multiple contracts
+<br>
+<input type="checkbox"> While dealing with external calls, (ex:flashloans) do i need to setUp external contract symbolically
+<a href="https://github.com/Certora/Tutorials/blob/michael/ethcc/EthCC/LiquidityPool/SymbolicFlashLoanReceiver.sol#L13">Example</a>
 
 <br>
 <input type="checkbox"> Am I Using <b>Implication</b> and <b>Correlation</b> ?

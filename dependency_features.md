@@ -9,3 +9,7 @@
     - Now suppose main contract has `IERC20` variable, `erc20`
     - you create `dummyErc` and link it to the `erc20` variable in main contract
     - remember you will need this `dummyErc.sol` to add to scene while executing commands
+- using `currentContract` returns address of main contract
+   - example:```DummyErc.balanceOf(currentContract)```
+- Order of spec writing
+   - ```import statements > using statements > method block > rules```

@@ -174,6 +174,9 @@
 ```c
 methods {
    function flashLoan(address,amount) external returns(bool) => DISPATCHER(true);
+   // in the doc _ wildcard was added to match any lookalikefunction
+   // https://docs.certora.com/en/latest/docs/cvl/methods.html?highlight=nondet#wildcard-entries
+   function _.executeOperation(uint256,uint256,address) external => DISPATCHER(true);
 }
 ```
 

@@ -4,7 +4,7 @@
 ## Dummy commands
 **cli**
 ```bash
- certoraRun  TESTME.sol:IndirectBug --verify IndirectBug:testme.spec --solc /home/whoami/.local/bin/solc --rule_sanity basic --x c
+ certoraRun  TESTME.sol:IndirectBug --verify IndirectBug:testme.spec --solc /home/whoami/.local/bin/solc --rule_sanity basic 
 ```
 **certcmd.sh**
 ```bash

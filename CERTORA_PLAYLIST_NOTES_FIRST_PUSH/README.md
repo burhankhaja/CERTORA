@@ -7,11 +7,9 @@
  certoraRun  TESTME.sol:IndirectBug --verify IndirectBug:testme.spec --solc /home/whoami/.local/bin/solc --rule_sanity basic --x c
 ```
 **certcmd.sh**
-```
-//run certcmd
+```bash
+# run certcmd
 solc-select use <version> 
- 
- export PATH=$PATH:/home/whoami/.local/bin/solc  
  
  export CERTORAKEY=$private
  
